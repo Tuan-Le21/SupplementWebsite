@@ -10,7 +10,8 @@ class Application extends Controller {
   }
 
   def homepage = Action {
-    Ok("Welcome to Supplement Gorillaz")
+    Ok(views.html.homepage("Supplement Gorillaz", "Welcome to Supplement Gorillaz"))
+
   }
 
 
