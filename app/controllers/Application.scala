@@ -1,7 +1,11 @@
 package controllers
 
-import play.api._
+
+import models.Product
+
 import play.api.mvc._
+
+
 
 class Application extends Controller {
 
@@ -10,9 +14,25 @@ class Application extends Controller {
   }
 
   def homepage = Action {
-    Ok(views.html.homepage("Supplement Gorillaz", "Welcome to Supplement Gorillaz"))
+    Ok(views.html.homepage("Supplement Gorillaz"))
 
   }
 
+  def products = Action {
+    Ok(views.html.products("Supplement Gorillaz"))
+  }
+
+  def login = Action {
+    Ok(views.html.login("Supplement Gorillaz"))
+  }
+
+  def checkout = Action {
+    Ok(views.html.checkout("Supplement Gorillaz"))
+  }
+
+
+
 
 }
+
+
